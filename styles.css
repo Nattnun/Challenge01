@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid silver;
+  border-radius: 1rem;
+}
+h4::before {
+  content: "X";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+h4::after {
+  content: "9";
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background-color: red;
+  padding-inline: 0.5rem;
+  padding-block: 0.25rem;
+  border-radius: 50%;
+  color: white;
+}
+
+.card img {
+  width: 120px;
+}
+
+.card h4 {
+  text-align: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  border-top: 1px solid silver;
+}
